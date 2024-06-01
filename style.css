@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* || RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  --CARD-BG-COLOR: hsl(0, 0%, 100%);
+  --BACKGROUND-COLOR: hsl(275, 100%, 97%);
+  --HOVER-COLOR: hsl(292, 16%, 49%);
+  --HEADING-COLOR: hsl(292, 42%, 14%);
+}
+
+/* || GENERAL STYLES */
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  background-color: var(--BACKGROUND-COLOR);
+
+  display: flex;
+  flex-direction: column;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 90%;
+  height: auto;
+  background-color: var(--CARD-BG-COLOR);
+  border-radius: 0.6rem;
+  align-self: center;
+  margin-top: -5rem;
+  margin-bottom: 7rem;
+}
+
+.card-section {
+  padding: 1.5rem;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.heading img {
+  width: 25px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--HEADING-COLOR);
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span {
+  flex-shrink: 0;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+h4 {
+  font-weight: 600;
+  margin: 1.3rem 0;
+  color: var(--HEADING-COLOR);
+}
+
+h4:hover {
+  font-weight: 600;
+  color: var(--HOVER-COLOR);
+  cursor: pointer;
+}
+
+hr {
+  border-color: hsla(276, 100%, 97%, 0.24);
+}
+
+.answer {
+  display: none;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--HOVER-COLOR);
+}
+
+.answer_toggle {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 500px;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
